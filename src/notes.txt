@@ -1,5 +1,9 @@
-
+// NOTES
 rafce is a short cut to get const insteal of funciton like rfce
+
+// installing react icons 
+npm install react-icons 
+
 What is TypeScript? 
 
 // JavaScript and More
