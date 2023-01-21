@@ -1,0 +1,10 @@
+What is TypeScript? 
+
+// JavaScript and More
+TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor. 
+
+// A Result you can Trust 
+TypeScript code converts to JavaScript, which runs anywhere JavaScript runs: In a browser, on Node.js or Deno and in your apps.
+
+// Safety at Scale
+TypeScript understands JavaScript and uses type inference to give you great tooling without addional code. 
