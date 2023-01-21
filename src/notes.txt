@@ -1,3 +1,5 @@
+
+rafce is a short cut to get const insteal of funciton like rfce
 What is TypeScript? 
 
 // JavaScript and More
