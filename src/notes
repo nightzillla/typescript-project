@@ -8,3 +8,39 @@ TypeScript code converts to JavaScript, which runs anywhere JavaScript runs: In 
 
 // Safety at Scale
 TypeScript understands JavaScript and uses type inference to give you great tooling without addional code. 
+
+
+// Making a new project in Typescript with React 
+npx create-react-app my-app --template typescript 
+
+// Typescript basics 
+
+let name: string;
+let age: number | string;
+let isStudent: boolean;
+let hobbies: string[]; // || let hobbies: number[];
+// This is called tuple
+let role:[number, string];
+
+let pringName: (name:string) => void;
+
+interface Person {
+  name: string; 
+  age?: number;
+}
+
+interface Guy extends Person {
+  profession: string;
+}
+ 
+// When you're using objects 
+// If you use ? it mean it can be opitonal 
+type Person = {
+  name: string;
+  age?: number;
+};
+
+let person: Person = {
+  name: "Piyush",
+  age: 5,
+};
