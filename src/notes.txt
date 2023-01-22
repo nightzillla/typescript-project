@@ -4,6 +4,10 @@ rafce is a short cut to get const insteal of funciton like rfce
 // installing react icons 
 npm install react-icons 
 
+// installing dragable 
+npm i react-beautiful-dnd
+npm i @types/react-beautiful-dnd
+
 What is TypeScript? 
 
 // JavaScript and More
