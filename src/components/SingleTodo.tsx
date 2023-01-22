@@ -5,9 +5,9 @@ import { MdDone } from 'react-icons/md';
 import { Draggable } from 'react-beautiful-dnd';
 
 type Props = {
-    index: number,
-    todo:Todo,
-    todos:Todo[],
+    index: number;
+    todo:Todo;
+    todos: Array<Todo>;
     setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;  
 };
 
@@ -41,8 +41,8 @@ const SingleTodo = ({ index, todo, todos, setTodos }: Props) => {
         }, [edit])
 
     return (
-        <Draggable draggableId={todo.id.toString()} index={index}>
-            {(provided) => ( 
+        <Draggable draggableId={todo.id.toString()} index={index}> 
+            {(provided, snapshot) => ( 
                 <form 
                     className="todos_single" 
                     onSubmit={(e) => handleEdit(e, todo.id)}
@@ -79,8 +79,7 @@ const SingleTodo = ({ index, todo, todos, setTodos }: Props) => {
                             <AiFillDelete/>
                         </span>
                         <span 
-                            className="icon" 
-                            onClick={() => handleDone(todo.id)}>
+                            className="icon" onClick={() => handleDone(todo.id)}>
                             <MdDone/>
                         </span>
                     </div>
